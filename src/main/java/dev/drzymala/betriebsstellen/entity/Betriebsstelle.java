@@ -2,38 +2,8 @@ package dev.drzymala.betriebsstellen.entity;
 
 import lombok.Data;
 
-import javax.persistence.*;
-
 @Data
-@Entity
-@Table
 public class Betriebsstelle {
-
-    @Id
-    @SequenceGenerator(
-            name = "betriebsstelle_sequence",
-            sequenceName = "betriebsstelle_sequence",
-            allocationSize = 1
-    )
-    @GeneratedValue(
-            strategy = GenerationType.SEQUENCE,
-            generator = "issues_sequence"
-    )
-    private Long id;
-    private String Abkuerzung;
-    private String Name;
-    private String Kurzname;
-    private String Typ;
-    private String BetrZust;
-    private String PrimaryLocationCode;
-    private Long UIC;
-    private Long RB;
-    private Long gueltigVon;
-    private Long gueltigBis;
-    private Long NetzKey;
-    private String FplRel;
-    private String FplGr;
-
     /*
      * In den veröffentlichten Daten ist für jede Betriebsstelle definiert:
      *
@@ -51,4 +21,18 @@ public class Betriebsstelle {
      * * Fpl-rel: Fahrplanrelevanz – dies ist eine im Fahrplan bestellbare Örtlichkeit – im Ausland nur ausnahmsweise gekennzeichnet, z.B. J
      * * Fpl-Gr: Fahrplanbearbeitungsgrenze – im Ausland nur ausnahmsweise gekennzeichnet, z.B. N
      */
+
+    private String Abk;
+    private String Name;
+    private String Kurzname;
+    private String Typ;
+    private String BetrZust;
+    private String PrimaryLocationCode;
+    private Long UIC;
+    private Long RB;
+    private Long GueltigVon;
+    private Long GueltigBis;
+    private Long NetzKey;
+    private String FplRel;
+    private String FplGr;
 }

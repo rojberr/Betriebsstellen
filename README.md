@@ -7,8 +7,6 @@ This is my CSV -> JSON Spring Boot converter app.
 I downloaded and ...
 Betriebsstellenverzeichnis (Stand 04/2018)
 
-
-
 <https://data.deutschebahn.com/dataset/data-betriebsstellen.html>
 
 Langbeschreibung
@@ -27,3 +25,9 @@ In den veröffentlichten Daten ist für jede Betriebsstelle definiert:
 * Netz-Key: Eindeutiger unveränderlicher Schlüssel für alle Infrastrukturstellen, z.B. 117044
 * Fpl-rel: Fahrplanrelevanz – dies ist eine im Fahrplan bestellbare Örtlichkeit – im Ausland nur ausnahmsweise gekennzeichnet, z.B. J
 * Fpl-Gr: Fahrplanbearbeitungsgrenze – im Ausland nur ausnahmsweise gekennzeichnet, z.B. N
+
+## Design Pattern
+
+I used Spring-MVC-Design-Pattern
+
+![img.png](img.png)
