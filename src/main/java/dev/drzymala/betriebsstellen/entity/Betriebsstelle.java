@@ -1,6 +1,5 @@
 package dev.drzymala.betriebsstellen.entity;
 
-
 import lombok.Data;
 
 import javax.persistence.*;
@@ -21,7 +20,7 @@ public class Betriebsstelle {
             generator = "issues_sequence"
     )
     private Long id;
-    private String Abkurzung;
+    private String Abkuerzung;
     private String Name;
     private String Kurzname;
     private String Typ;
