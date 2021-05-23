@@ -23,7 +23,7 @@ In den veröffentlichten Daten ist für jede Betriebsstelle definiert:
 * UIC: UIC RICS code, z.B. 0080
 * RB: Zuständiger Regionalbereich Netz, nur für Örtlichkeiten der DB Netz AG, z.B. 5
 * gültig von im Format YYYYMMDD, z.B. 20081214
-* gültig bi im Format YYYYMMDD. Bleibt frei, wenn keine Begrenzung vorliegt.
+* gültig bis im Format YYYYMMDD. Bleibt frei, wenn keine Begrenzung vorliegt.
 * Netz-Key: Eindeutiger unveränderlicher Schlüssel für alle Infrastrukturstellen, z.B. 117044
 * Fpl-rel: Fahrplanrelevanz – dies ist eine im Fahrplan bestellbare Örtlichkeit – im Ausland nur ausnahmsweise gekennzeichnet, z.B. J
 * Fpl-Gr: Fahrplanbearbeitungsgrenze – im Ausland nur ausnahmsweise gekennzeichnet, z.B. N
