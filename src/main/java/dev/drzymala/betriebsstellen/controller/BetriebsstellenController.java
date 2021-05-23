@@ -1,8 +1,8 @@
 package dev.drzymala.betriebsstellen.controller;
 
 
-public class BetriebsstellenController {
 
+public class BetriebsstellenController {
 
 
 
