@@ -28,11 +28,27 @@ public class Betriebsstelle {
     private String Typ;
     private String BetrZust;
     private String PrimaryLocationCode;
-    private Long UIC;
-    private Long RB;
-    private Long GueltigVon;
-    private Long GueltigBis;
-    private Long NetzKey;
+    private String UIC; // Long
+    private String RB; // Long
+    private String GueltigVon; // Long
+    private String GueltigBis; // Long
+    private String NetzKey; // Long
     private String FplRel;
     private String FplGr;
+
+    public Betriebsstelle(String[] zeile) {
+        this.Abk = zeile[0];
+        this.Name = zeile[1];
+        this.Kurzname = zeile[2];
+        this.Typ = zeile[3];
+        this.BetrZust = zeile[4];
+        this.PrimaryLocationCode = zeile[5];
+        this.UIC = zeile[6];
+        this.RB = zeile[7];
+        this.GueltigVon = zeile[8];
+        this.GueltigBis = zeile[9];
+        this.NetzKey = zeile[10];
+        this.FplRel = zeile[11];
+        this.FplGr = zeile[12];
+    }
 }

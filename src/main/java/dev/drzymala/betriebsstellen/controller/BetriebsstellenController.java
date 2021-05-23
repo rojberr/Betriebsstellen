@@ -43,13 +43,13 @@ public class BetriebsstellenController {
                 Reader reader = Files.newBufferedReader(Paths.get("./DBNetz-Betriebsstellenverzeichnis-Stand2018-04.csv"));
                 CSVReader csvReader = new CSVReader(reader)) {
                     // Iterate through CSV
-                    String[] zeile;
-                    while ((zeile = csvReader.readNext()) != null) {
-                        String[] abk = zeile[0].split(";");
+                    String[] input;
+                    while ((input = csvReader.readNext()) != null) {
+                        String[] zeile = input[0].split(";");
 
                         // If query equals abk return JSON
-                        if (abk[0].equalsIgnoreCase(query.replace('-',' '))) {
-                            Betriebsstelle betriebsstelle = new Betriebsstelle();
+                        if (zeile[0].equalsIgnoreCase(query.replace('-',' '))) {
+                            Betriebsstelle betriebsstelle = new Betriebsstelle(zeile);
                             return new ResponseEntity(betriebsstelle, HttpStatus.OK);
                         }
                     }
