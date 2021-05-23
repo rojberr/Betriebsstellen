@@ -29,13 +29,13 @@ public class Betriebsstelle {
     private String PrimaryLocationCode;
     private Long UIC;
     private Long RB;
-    private Long gültigVon;
-    private Long gültigBis;
+    private Long gueltigVon;
+    private Long gueltigBis;
     private Long NetzKey;
     private String FplRel;
     private String FplGr;
 
-    /**
+    /*
      * In den veröffentlichten Daten ist für jede Betriebsstelle definiert:
      *
      * * Abk: Abkürzung entsprechend Richtlinie 100.0001, die sich aus Ort und Art zusammensetzt. Eine gute Erklärung findet man in der Wikipedia
