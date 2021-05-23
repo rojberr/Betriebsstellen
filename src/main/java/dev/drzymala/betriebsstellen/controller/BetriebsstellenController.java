@@ -36,21 +36,20 @@ public class BetriebsstellenController {
 //        Typ: Ost
 //    }
 
-    @GetMapping("/{abkuerzung}")
+    @GetMapping("/{query}")
     public ResponseEntity<Betriebsstelle> getBetriebsstelle(@PathVariable String query) throws IOException {
         try (
                 //Open CSV and create reader
                 Reader reader = Files.newBufferedReader(Paths.get("./DBNetz-Betriebsstellenverzeichnis-Stand2018-04.csv"));
                 CSVReader csvReader = new CSVReader(reader)) {
-                    // Iterate through CSV with openCSV
+                    // Iterate through CSV
                     String[] zeile;
                     while ((zeile = csvReader.readNext()) != null) {
                         String[] abk = zeile[0].split(";");
 
-                        // If first element is equal to query -> return Betriebsstelle in JSON
+                        // If query equals abk return JSON
                         if (abk[0].equalsIgnoreCase(query.replace('-',' '))) {
                             Betriebsstelle betriebsstelle = new Betriebsstelle();
-                            // TODO: Init Betriebsstelle with CSV
                             return new ResponseEntity(betriebsstelle, HttpStatus.OK);
                         }
                     }
