@@ -1,14 +1,20 @@
 # Betriebsstellen
-This is my CSV -> JSON Spring Boot converter app.
 
+Hallo!
+This app allows you to type a shortname of a rail station and get its data in JSON as a response.
+It's nothing more than simple CSV search -> JSON Spring Boot app.
 
+It's hosted on Heroku:  
+(it may take up to 30 sec to launch it for the first time, because Heroku freezes free aps after 30 minutes of inactivity)  
+<https://betriebsstellen.herokuapp.com/>
 
+![bild.jpg](bild.jpg)
 
-I downloaded and ...
+To show my outstanding coding skills I used a really big CSV file (more than 23089 positions), which you can download from here:
+
 Betriebsstellenverzeichnis (Stand 04/2018)
-
 <https://data.deutschebahn.com/dataset/data-betriebsstellen.html>
-
+```
 Langbeschreibung
 In den veröffentlichten Daten ist für jede Betriebsstelle definiert:
 
@@ -25,6 +31,8 @@ In den veröffentlichten Daten ist für jede Betriebsstelle definiert:
 * Netz-Key: Eindeutiger unveränderlicher Schlüssel für alle Infrastrukturstellen, z.B. 117044
 * Fpl-rel: Fahrplanrelevanz – dies ist eine im Fahrplan bestellbare Örtlichkeit – im Ausland nur ausnahmsweise gekennzeichnet, z.B. J
 * Fpl-Gr: Fahrplanbearbeitungsgrenze – im Ausland nur ausnahmsweise gekennzeichnet, z.B. N
+```
+
 
 ## Design Pattern
 

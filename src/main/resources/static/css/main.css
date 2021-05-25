@@ -217,7 +217,17 @@ svg:not(:root) {
  * 2. Remove the margin in Firefox and Safari.
  */
 button,
-input,
+input {
+  display: inline-block;
+  vertical-align: baseline;
+  background-color: #f9f9f9;
+  font-size: 14px;
+  margin-bottom: 5px;
+  border: 0;
+  border-radius: 0;
+  max-width: 100%;
+  padding: 4px 0 4px 2px;
+}
 optgroup,
 select,
 textarea {
@@ -237,8 +247,15 @@ textarea {
  */
 button,
 input {
-  /* 1 */
-  overflow: visible;
+  display: inline-block;
+  vertical-align: baseline;
+  background-color: #f9f9f9;
+  font-size: 14px;
+  margin-bottom: 5px;
+  border: 0;
+  border-radius: 0;
+  max-width: 100%;
+  padding: 4px 0 4px 2px;
 }
 
 /**
