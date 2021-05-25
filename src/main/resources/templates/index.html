@@ -37,6 +37,9 @@
         const f = document.getElementById('form');
         const q = document.getElementById('query');
         const site = "https://betriebsstellen.herokuapp.com/betriebsstelle/";
+        // https://betriebsstellen.herokuapp.com/betriebsstelle/
+        // http://localhost:8080/betriebsstelle/
+
 
         function submitted(event) {
             event.preventDefault();
@@ -48,11 +51,5 @@
     </script>
 </div>
 <script src="./js/extention/choices.js"></script>
-<script>
-    var textPresetVal = new Choices('#choices-text-preset-values',
-        {
-            removeItemButton: true,
-        });
-</script>
 </body>
 </html>
