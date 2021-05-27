@@ -1,4 +1,4 @@
-package dev.drzymala.betriebsstellen.entity;
+package dev.drzymala.betriebsstellen.betriebsstelle;
 
 import lombok.Data;
 

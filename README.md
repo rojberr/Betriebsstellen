@@ -1,6 +1,6 @@
 # Betriebsstellen
 
-Hallo!
+Hallo!  
 This app allows you to type a shortname of a rail station and get its data in JSON as a response.
 It's nothing more than simple CSV search -> JSON Spring Boot app.
 
